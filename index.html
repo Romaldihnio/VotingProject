@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Благоустройство</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    <header>
+        <div class="header-content">
+             <div class="logo-container">
+            <h2 class="logo-text">Благоустройство</h2>
+        </div>
+        <nav class="nav">
+            <a href="#home" class="nav-a">Главная</a>
+            <a href="#add-section" class="nav-a">Добавить проект</a>
+        </nav>
+        </div>
+    </header>
+    <div class="cards">
+        <div class="card">
+            <h2 class="name-text">Имя</h2>
+            <p class="desc-text">Описание: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, natus reprehenderit, aspernatur ut iusto veniam, consequuntur beatae fuga illum animi quod corrupti? Consequuntur odio aperiam provident debitis accusamus, id dolore?</p>
+            <p class="author-text">Автор:</p>
+            <p class="status-text">Статус: одобрено</p>
+            <div class="likes">
+                <p class="like-count">123 всего голосов</p>
+                <p class="btn">Нравится❤️</p>
+            </div>
+        </div>
+    </div>
+    <div class="add-projects" id="add-section">
+         <h3>Добавить проект</h3>
+         <input type="text" id="name" placeholder="Название" class="input">
+         <textarea id="desc" placeholder="Описание" class="input"></textarea>
+         <input type="text" id="author" placeholder="Автор" class="input">
+         <select id="status" class="input">
+            <option value="">Выберите статус</option>
+            <option value="идея">Идея</option>
+            <option value="одобрено">Одобрено</option>
+         </select>
+         <p class="btn" id="add-btn">Добавить</p>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
