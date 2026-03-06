@@ -52,6 +52,7 @@ header{
 .nav-a:hover{
     color: black;
     border: 1px solid black;
+    cursor: pointer;
 }
 .cards{
     display: flex;
@@ -105,7 +106,7 @@ header{
 .add-projects:hover{
      border-top: 3px solid #0bc08a;
 }
-.add-btn{
+#add-btn{
     min-width: 83px;
     margin-top: 5px;
 }

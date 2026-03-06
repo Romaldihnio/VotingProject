@@ -1,5 +1,6 @@
 const card_container = document.querySelector(".cards")
-const add_btn = document.querySelector(".add-btn")
+const add_btn = document.querySelector("#add-btn")
+const clear_btn = document.querySelector("#clear-btn")
 async function loadProjects() {
     let projects = localStorage.getItem("projects")
     if(!projects){
@@ -71,6 +72,15 @@ function addProject(){
     projects.push(newProject)
     localStorage.setItem("projects", JSON.stringify(projects))
     renderCards(projects)
+    alert("Проект успешно добавлен!")
     input_form.reset()
+}
+clear_btn.addEventListener("click", function(){
+    clearLocalStorage()
+    alert("localStorage был успешно очищен!")
+})
+function clearLocalStorage(){
+    localStorage.clear()
+    loadProjects()
 }
 loadProjects()
